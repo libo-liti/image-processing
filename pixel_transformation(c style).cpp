@@ -1,4 +1,4 @@
-#include "opencv2/cv.hpp"
+#include "opencv2/opencv.hpp"
 using namespace std;
 using namespace cv;
 
@@ -13,7 +13,7 @@ int main()
 		for (int c = 0; c < lenna.cols; c++)
 			p[c] = saturate_cast<uchar>(p[c] + 30);
 	}
-	imshow("lenna", lenna);
+	imshow("result", lenna);
 	waitKey();
 	return 0;
 }
