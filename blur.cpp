@@ -7,7 +7,7 @@ int main()
 	Mat src = imread("../image/lenna.jpg");
 	Mat dst;
 
-	blur(src, dst, Size(8, 8));
+	blur(src, dst, Size(11, 11));
 
 	imshow("source", src);
 	imshow("result", dst);
